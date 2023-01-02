@@ -1,0 +1,160 @@
+<html>
+
+<head>
+  <!-- animation from: https://codepen.io/stack-findover/pen/OJRvPQv -->
+
+  <meta charset="utf-8">
+  <title>FreeCodeCamp form</title>
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Animation start-->
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">
+        <div class="loginbackground-gridContainer">
+          <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+            <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+            <div class="box-root box-background--blue800 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+            <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+            <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+            <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+            <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+            <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+            <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+
+        </div>
+        <!-- Animation end-->
+        <div class="header">
+        </div>
+        <div class="content">
+          <h1 id="title">Form example</h1>
+          <p id="description">Example contact form using scc, html, js and boostrap</p>
+          <form id="survey-form" action="javascript:void(0);">
+            <div class="form-group">
+              <label for="name" id="name-label">Name</label>
+              <input class="form-control" type="text" id="name" placeholder="enten your name" value="" required/>
+            </div>
+            <div class="form-group">
+              <label for="email" id="email-label">Email</label>
+              <input class="form-control" type="email" id="email" placeholder="enten your email" required/>
+            </div>
+            <div class="form-group">
+              <label for="number" id="number-label">Age</label>
+              <input class="form-control" type="number" id="number" min="1" max="100" placeholder=" enten your age" />
+            </div>
+            <div class="form-group">
+              <label for="dropdown" id="dropdown-label">Choose your sex:</label>
+              <select class="form-control" id="dropdown">
+        <option value="M">Man</option>
+        <option value="W">Woman</option>
+        <option value="O">Other</option>
+    </select>
+            </div>
+            <div class="form-group">
+              <label id="radio-label">Are you student?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question" id="studentYes" value="yes">
+                <label class="form-check-label" for="studentYes">
+    Yes
+  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question" id="studentNo" value="no">
+                <label class="form-check-label" for="studentNo">
+    No
+  </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">What you like in this website?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="like1" id="like1" value="colors">
+                <label class="form-check-label" for="like1">
+        Colors
+  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="like2" id="like2" value="content">
+                <label class="form-check-label" for="like2">
+        Content
+  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="like3" id="like3" value="animation">
+                <label class="form-check-label" for="like3">
+        Animations
+  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="like4" id="like4" value="idea"> <label class="form-check-label" for="like4">
+        Idea
+  </label>
+              </div>
+            </div>
+            <div class="form-group row">
+
+              <label for="textarea" id="textarea-label">Any comments or suggestions?</label>
+              <textarea class="form-control" id="textarea" placeholder="Share with me yours idea's" ></textarea>
+            </div>
+            <div class="form-group submitDiv">
+              <button id="submit">
+            <p id="btnText">Submit</p>
+            <div class="check-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+        </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const btn = document.querySelector("#submit");
+    const btnText = document.querySelector("#btnText");
+    const form= document.querySelector("form");
+
+        btn.onclick = () => {
+           if (form.checkValidity()) {
+            btnText.innerHTML = "Thanks";
+            btn.classList.add("active");}
+        };
+  </script>
+</body>
+
+</html>
